@@ -17,10 +17,7 @@ function Header() {
   return (
     <Container className="mt-16">
       <Heading as="h1">Helping companies generate revenue.</Heading>
-      <Lead className="mt-6 max-w-3xl">
-        We’re on a mission to transform revenue organizations by harnessing vast
-        amounts of illegally acquired customer data.
-      </Lead>
+      <Lead className="mt-6 max-w-3xl">I know hospitality.</Lead>
       <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
         <div className="max-w-lg">
           <h2 className="text-2xl font-medium tracking-tight">Our mission</h2>
