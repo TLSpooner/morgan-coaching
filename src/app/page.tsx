@@ -43,8 +43,8 @@ function Hero() {
             Your business runs on hospitality.
           </h1>
           <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            People may not remember what you sell, but they'll never forget how
-            you made them feel. That's hospitality—and it's your competitive
+            People may not remember what you sell, but they&apos;ll never forget how
+            you made them feel. That&apos;s hospitality—and it&apos;s your competitive
             advantage.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
