@@ -1,0 +1,106 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: Switzer, system-ui, sans-serif;
+
+  --radius-4xl: 2rem;
+  /* morganBrown */
+  --morgan-brown-50: oklch(0.98 0.005 55);
+  --morgan-brown-100: oklch(0.955 0.01 55);
+  --morgan-brown-200: oklch(0.9 0.018 55);
+  --morgan-brown-300: oklch(0.78 0.028 55);
+  --morgan-brown-400: oklch(0.6 0.038 55);
+  --morgan-brown-500: oklch(0.42 0.045 55); /* original */
+  --morgan-brown-600: oklch(0.34 0.042 55);
+  --morgan-brown-700: oklch(0.27 0.038 55);
+  --morgan-brown-800: oklch(0.21 0.032 55);
+  --morgan-brown-900: oklch(0.165 0.025 55);
+  --morgan-brown-950: oklch(0.115 0.018 55);
+
+  /* morganGold */
+  --morgan-gold-50: oklch(0.975 0.01 95);
+  --morgan-gold-100: oklch(0.95 0.02 95);
+  --morgan-gold-200: oklch(0.9 0.04 95);
+  --morgan-gold-300: oklch(0.84 0.065 95);
+  --morgan-gold-400: oklch(0.78 0.08 95);
+  --morgan-gold-500: oklch(0.72 0.085 95); /* original */
+  --morgan-gold-600: oklch(0.63 0.075 95);
+  --morgan-gold-700: oklch(0.51 0.06 95);
+  --morgan-gold-800: oklch(0.41 0.045 95);
+  --morgan-gold-900: oklch(0.34 0.035 95);
+  --morgan-gold-950: oklch(0.22 0.02 95);
+
+  /* morganGreen */
+  --morgan-green-50: oklch(0.97 0.008 155);
+  --morgan-green-100: oklch(0.94 0.015 155);
+  --morgan-green-200: oklch(0.88 0.025 155);
+  --morgan-green-300: oklch(0.78 0.04 155);
+  --morgan-green-400: oklch(0.65 0.055 155);
+  --morgan-green-500: oklch(0.485 0.065 155); /* original */
+  --morgan-green-600: oklch(0.42 0.06 155);
+  --morgan-green-700: oklch(0.35 0.05 155);
+  --morgan-green-800: oklch(0.29 0.04 155);
+  --morgan-green-900: oklch(0.245 0.03 155);
+  --morgan-green-950: oklch(0.18 0.02 155);
+
+  /* morganOrange */
+  --morgan-orange-50: oklch(0.972 0.02 58.3);
+  --morgan-orange-100: oklch(0.945 0.04 58.3);
+  --morgan-orange-200: oklch(0.891 0.07 58.3);
+  --morgan-orange-300: oklch(0.836 0.1 58.3);
+  --morgan-orange-400: oklch(0.782 0.12 58.3);
+  --morgan-orange-500: oklch(0.758 0.12 58.3); /* original */
+  --morgan-orange-600: oklch(0.665 0.11 58.3);
+  --morgan-orange-700: oklch(0.541 0.09 58.3);
+  --morgan-orange-800: oklch(0.437 0.07 58.3);
+  --morgan-orange-900: oklch(0.366 0.05 58.3);
+  --morgan-orange-950: oklch(0.234 0.03 58.3);
+
+  /* morganYellow */
+  --morgan-yellow-50: oklch(0.981 0.02 89.7);
+  --morgan-yellow-100: oklch(0.963 0.05 89.7);
+  --morgan-yellow-200: oklch(0.925 0.09 89.7);
+  --morgan-yellow-300: oklch(0.886 0.13 89.7);
+  --morgan-yellow-400: oklch(0.848 0.15 89.7);
+  --morgan-yellow-500: oklch(0.845 0.15 89.7); /* original */
+  --morgan-yellow-600: oklch(0.742 0.13 89.7);
+  --morgan-yellow-700: oklch(0.604 0.11 89.7);
+  --morgan-yellow-800: oklch(0.488 0.08 89.7);
+  --morgan-yellow-900: oklch(0.409 0.06 89.7);
+  --morgan-yellow-950: oklch(0.261 0.03 89.7);
+
+  /* morganMaroon */
+  --morgan-maroon-50: oklch(0.958 0.01 34.2);
+  --morgan-maroon-100: oklch(0.917 0.02 34.2);
+  --morgan-maroon-200: oklch(0.834 0.03 34.2);
+  --morgan-maroon-300: oklch(0.698 0.05 34.2);
+  --morgan-maroon-400: oklch(0.525 0.06 34.2);
+  --morgan-maroon-500: oklch(0.387 0.06 34.2);
+  --morgan-maroon-600: oklch(0.309 0.06 34.2);
+  --morgan-maroon-700: oklch(0.254 0.06 34.2);
+  --morgan-maroon-800: oklch(0.228 0.07 34.2);
+  --morgan-maroon-900: oklch(0.216 0.07 34.2);
+  --morgan-maroon-950: oklch(0.203 0.07 34.2); /* original */
+
+  /* morganPink */
+  --morgan-pink-50: oklch(0.97 0.02 340.5);
+  --morgan-pink-100: oklch(0.941 0.05 340.5);
+  --morgan-pink-200: oklch(0.882 0.09 340.5);
+  --morgan-pink-300: oklch(0.823 0.14 340.5);
+  --morgan-pink-400: oklch(0.765 0.17 340.5);
+  --morgan-pink-500: oklch(0.732 0.17 340.5); /* original */
+  --morgan-pink-600: oklch(0.643 0.15 340.5);
+  --morgan-pink-700: oklch(0.523 0.12 340.5);
+  --morgan-pink-800: oklch(0.422 0.1 340.5);
+  --morgan-pink-900: oklch(0.354 0.07 340.5);
+  --morgan-pink-950: oklch(0.226 0.04 340.5);
+}
+
+@keyframes move-x {
+  0% {
+    transform: translateX(var(--move-x-from));
+  }
+  100% {
+    transform: translateX(var(--move-x-to));
+  }
+}
