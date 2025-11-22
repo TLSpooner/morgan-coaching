@@ -12,10 +12,12 @@ import { Logo } from './logo'
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
 
 const links = [
-  { href: '/pricing', label: 'Pricing' },
+  { href: '/pricing', label: 'Services' },
   { href: '/company', label: 'Company' },
   { href: '/blog', label: 'Blog' },
-  { href: '/login', label: 'Login' },
+  { href: '/', label: 'Financial Advisors' },
+  { href: '/', label: 'Business Leaders' },
+  // { href: '/login', label: 'Login' },
 ]
 
 function DesktopNav() {
@@ -80,7 +82,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
     <Disclosure as="header" className="pt-12 sm:pt-16">
       <PlusGrid>
         <PlusGridRow className="relative flex justify-between">
-          <div className="relative flex gap-6">
+          <div className="relative flex gap-28">
             <PlusGridItem className="py-3">
               <Link href="/" title="Home">
                 <Logo className="h-9" />

@@ -17,12 +17,12 @@ export function LogoCloud({
       />
       <img
         alt="Laravel"
-        src="/logo-cloud/laravel.svg"
+        src="/logo-cloud/working-genius.svg"
         className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
       />
       <img
         alt="Tuple"
-        src="/logo-cloud/tuple.svg"
+        src="/logo-cloud/unreasonable-hospitality-logo.svg"
         className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
       />
       <img

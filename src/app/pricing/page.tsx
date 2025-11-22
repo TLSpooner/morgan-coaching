@@ -15,17 +15,17 @@ import {
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Pricing',
+  title: 'Services',
   description:
     'Companies all over the world have closed millions of deals with Radiant. Sign up today and start selling smarter.',
 }
 
 const tiers = [
   {
-    name: 'Starter' as const,
-    slug: 'starter',
-    description: 'Everything you need to start selling.',
-    priceMonthly: 99,
+    name: 'Coaching' as const,
+    slug: 'coaching',
+    description: 'One-on-one coaching to improve client experience.',
+    priceMonthly: 5,
     href: '#',
     highlights: [
       { description: 'Up to 3 team members' },
@@ -50,10 +50,10 @@ const tiers = [
     ],
   },
   {
-    name: 'Growth' as const,
+    name: 'Workshop' as const,
     slug: 'growth',
-    description: 'All the extras for your growing team.',
-    priceMonthly: 149,
+    description: 'Concentrated learning for teams.',
+    priceMonthly: 20,
     href: '#',
     highlights: [
       { description: 'Up to 10 team members' },
@@ -78,10 +78,10 @@ const tiers = [
     ],
   },
   {
-    name: 'Enterprise' as const,
-    slug: 'enterprise',
-    description: 'Added flexibility to close deals at scale.',
-    priceMonthly: 299,
+    name: 'Keynote' as const,
+    slug: 'keynote',
+    description: 'Quality learning for crowds.',
+    priceMonthly: 30,
     href: '#',
     highlights: [
       { description: 'Unlimited active team members' },
@@ -110,10 +110,10 @@ const tiers = [
 function Header() {
   return (
     <Container className="mt-16">
-      <Heading as="h1">Pricing that grows with your team size.</Heading>
+      <Heading as="h1">Pricing designed to support your journey.</Heading>
       <Lead className="mt-6 max-w-3xl">
-        Companies all over the world have closed millions of deals with Radiant.
-        Sign up today and start selling smarter.
+        Business leaders worldwide have grown their companies through genuine
+        hospitality. Start creating lasting client relationships today.
       </Lead>
     </Container>
   )
@@ -144,11 +144,11 @@ function PricingCard({ tier }: { tier: (typeof tiers)[number] }) {
           <p className="mt-2 text-sm/6 text-gray-950/75">{tier.description}</p>
           <div className="mt-8 flex items-center gap-4">
             <div className="text-5xl font-medium text-gray-950">
-              ${tier.priceMonthly}
+              ${tier.priceMonthly}K
             </div>
             <div className="text-sm/5 text-gray-950/75">
               <p>USD</p>
-              <p>per month</p>
+              <p>per engagement</p>
             </div>
           </div>
           <div className="mt-8">

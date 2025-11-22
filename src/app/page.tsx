@@ -40,12 +40,11 @@ function Hero() {
         />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
           <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
-            Your business runs on hospitality.
+            Grow with hospitality.
           </h1>
-          <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            People may not remember what you sell, but they&apos;ll never forget how
-            you made them feel. That&apos;s hospitality—and it&apos;s your competitive
-            advantage.
+          <p className="mt-8 max-w-xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
+            Hospitality is your most valuable intangible asset. It goes beyond
+            selling products—it builds loyalty.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
             <Button href="#">Schedule a 30 min. call</Button>
