@@ -22,7 +22,7 @@ function Header() {
         <div className="max-w-lg">
           <h2 className="text-2xl font-medium tracking-tight">Our mission</h2>
           <p className="mt-6 text-sm/6 text-gray-600">
-            At Radiant, we are dedicated to transforming the way revenue
+            At Morgan Coaching, we are dedicated to transforming the way revenue
             organizations source and close deals. Our mission is to provide our
             customers with an unfair advantage over both their competitors and
             potential customers through insight and analysis. We’ll stop at
