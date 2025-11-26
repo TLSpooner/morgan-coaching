@@ -1,9 +1,11 @@
 import { createClient } from 'next-sanity'
 import { apiVersion, dataset, projectId } from './env'
 
+const isDevelopment = process.env.NODE_ENV === 'development'
+
 export const client = createClient({
   projectId,
   dataset,
   apiVersion,
-  useCdn: false, // Disabled CDN to prevent stale cache issues
+  useCdn: isDevelopment ? false : true,
 })

@@ -31,7 +31,8 @@ export const metadata: Metadata = {
     'Stay informed with product updates, company news, and insights on how to sell smarter at your company.',
 }
 
-export const revalidate = 60 // Revalidate every 10 seconds
+export const dynamic = 'force-dynamic' // Always fetch fresh data
+export const revalidate = 60
 
 const postsPerPage = 5
 
