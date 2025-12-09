@@ -18,9 +18,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link
           rel="stylesheet"
-          href="https://api.fontshare.com/css?f%5B%5D=switzer@400,500,600,700&amp;display=swap"
+          href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap"
+        />
+        <link
+          rel="stylesheet"
+          href="https://api.fontshare.com/css?f%5B%5D=twk-lausanne@400,500,600,700&amp;display=swap"
         />
         <link
           rel="alternate"

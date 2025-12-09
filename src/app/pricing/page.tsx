@@ -24,7 +24,7 @@ const tiers = [
   {
     name: 'Coaching' as const,
     slug: 'coaching',
-    description: 'One-on-one coaching to improve client experience.',
+    description: 'One-on-one coaching for your client experience.',
     priceMonthly: 5,
     href: '#',
     highlights: [

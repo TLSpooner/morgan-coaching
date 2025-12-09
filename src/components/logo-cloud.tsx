@@ -11,17 +11,17 @@ export function LogoCloud({
       )}
     >
       <img
-        alt="SavvyCal"
-        src="/logo-cloud/savvycal.svg"
+        alt="Coach Builder"
+        src="/logo-cloud/coach-builder.svg"
         className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
       />
       <img
-        alt="Laravel"
+        alt="Working-Genius"
         src="/logo-cloud/working-genius.svg"
         className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
       />
       <img
-        alt="Tuple"
+        alt="Unreasonable Hospitality"
         src="/logo-cloud/unreasonable-hospitality-logo.svg"
         className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
       />

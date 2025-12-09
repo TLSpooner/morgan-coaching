@@ -9,7 +9,7 @@ export function Gradient({
       {...props}
       className={clsx(
         className,
-        'bg-linear-115 from-[var(--morgan-green-50)] from-28% via-[var(--morgan-green-300)] via-70% to-[var(--morgan-green-500)] sm:bg-linear-145',
+        'bg-linear-115 from-white from-28% via-white via-70% to-morganBrown-300 sm:bg-linear-145',
       )}
     />
   )
@@ -21,7 +21,7 @@ export function GradientBackground() {
       <div
         className={clsx(
           'absolute -top-44 -right-60 h-60 w-xl transform-gpu md:right-0',
-          'bg-linear-115 from-[var(--morgan-green-50)] from-28% via-[var(--morgan-green-300)] via-70% to-[var(--morgan-green-500)]',
+          'from-mogranYellow-200 via-mogranOrange-200 bg-linear-115 from-28% via-70% to-morganGreen-500',
           'rotate-[-10deg] rounded-full blur-3xl',
         )}
       />

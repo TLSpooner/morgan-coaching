@@ -19,7 +19,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   description:
-    'Radiant helps you sell more by revealing sensitive information about your customers.',
+    'Hospitality is your most valuable intangible asset. It goes beyond selling products—it builds loyalty.',
 }
 
 function Hero() {
@@ -33,16 +33,16 @@ function Hero() {
               href="/blog/how-to-grow-your-business-with-hospitality-in-the-age-of-a-i"
               className="flex items-center gap-1 rounded-full bg-fuchsia-950/35 px-3 py-0.5 text-sm/6 font-medium text-white data-hover:bg-fuchsia-950/30"
             >
-              How to grow your business with hospitality in the age of A.I.
+              Hospitality in the age of A.I.
               <ChevronRightIcon className="size-4" />
             </Link>
           }
         />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
-          <h1 className="font-display text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
+          <h1 className="font-serif text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
             Grow with hospitality.
           </h1>
-          <p className="mt-8 max-w-xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
+          <p className="mt-8 max-w-xl font-sans text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
             Hospitality is your most valuable intangible asset. It goes beyond
             selling products—it builds loyalty.
           </p>

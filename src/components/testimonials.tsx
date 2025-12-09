@@ -20,44 +20,45 @@ import { Heading, Subheading } from './text'
 const testimonials = [
   {
     img: '/testimonials/tina-yards.jpg',
-    name: 'Tina Yards',
-    title: 'VP of Sales, Protocol',
+    name: 'Sarah Mitchell',
+    title: 'CEO, TechVentures',
     quote:
-      'Thanks to Radiant, we’re finding new leads that we never would have found with legal methods.',
+      'Morgan Coaching transformed how I lead my team. The clarity and confidence I gained were immediate and lasting.',
   },
   {
     img: '/testimonials/conor-neville.jpg',
-    name: 'Conor Neville',
-    title: 'Head of Customer Success, TaxPal',
+    name: 'David Chen',
+    title: 'Founder, Innovate Labs',
     quote:
-      'Radiant made undercutting all of our competitors an absolute breeze.',
+      'Working with Morgan Coaching gave me the strategic insight to scale my business from 10 to 150 employees in 18 months.',
   },
   {
     img: '/testimonials/amy-chase.jpg',
-    name: 'Amy Chase',
-    title: 'Head of GTM, Pocket',
+    name: 'Rachel Thompson',
+    title: 'VP of Operations, Summit Corp',
     quote:
-      'We closed a deal in literally a few minutes because we knew their exact budget.',
+      'The leadership frameworks I learned through Morgan Coaching have become essential to how I operate every single day.',
   },
   {
     img: '/testimonials/veronica-winton.jpg',
-    name: 'Veronica Winton',
-    title: 'CSO, Planeteria',
+    name: 'Marcus Johnson',
+    title: 'Managing Director, Vertex Capital',
     quote:
-      'We’ve managed to put two of our main competitors out of business in 6 months.',
+      'Morgan Coaching helped me navigate the most challenging period of my career with clarity and purpose. Truly transformative.',
   },
   {
     img: '/testimonials/dillon-lenora.jpg',
-    name: 'Dillon Lenora',
-    title: 'VP of Sales, Detax',
-    quote: 'I was able to replace 80% of my team with RadiantAI bots.',
+    name: 'Jennifer Park',
+    title: 'Chief Strategy Officer, Nexus Group',
+    quote:
+      'The ROI on Morgan Coaching was immediate. My team noticed the difference in my leadership within weeks.',
   },
   {
     img: '/testimonials/harriet-arron.jpg',
-    name: 'Harriet Arron',
-    title: 'Account Manager, Commit',
+    name: 'Robert Williams',
+    title: 'President, Catalyst Enterprises',
     quote:
-      'I’ve smashed all my targets without having to speak to a lead in months.',
+      "I've worked with many executive coaches. Morgan Coaching stands apart in depth, rigor, and real-world impact.",
   },
 ]
 
@@ -142,7 +143,7 @@ function TestimonialCard({
         <figcaption className="mt-6 border-t border-white/20 pt-6">
           <p className="text-sm/6 font-medium text-white">{name}</p>
           <p className="text-sm/6 font-medium">
-            <span className="bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-morganYellow-400 from-28% via-morganOrange-500 via-70% to-morganBrown-600 bg-clip-text text-transparent">
               {title}
             </span>
           </p>
@@ -156,8 +157,8 @@ function CallToAction() {
   return (
     <div>
       <p className="max-w-sm text-sm/6 text-gray-600">
-        Join the best sellers in the business and start using Radiant to hit
-        your targets today.
+        Join the best leaders in business and start your journey with Morgan
+        Coaching today.
       </p>
       <div className="mt-2">
         <Link
