@@ -47,7 +47,7 @@ function Hero() {
             selling products—it builds loyalty.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="#">Schedule a 30 min. call</Button>
+            <Button href="/contact">Schedule a 30 min. call</Button>
             <Button variant="secondary" href="/pricing">
               See pricing
             </Button>

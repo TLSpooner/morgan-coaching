@@ -6,7 +6,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: {
     template: '%s - Morgan Coaching',
-    default: 'Morgan Coaching - Grow ',
+    default: 'Morgan Coaching - Grow with hospitality',
   },
 }
 

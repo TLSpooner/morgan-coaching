@@ -21,9 +21,10 @@ export function Logo({ className }: { className?: string }) {
     >
       <motion.g
         variants={{
-          idle: { scale: 1, opacity: 1 },
+          idle: { scale: 1, opacity: 1, rotate: 0 },
           active: {
             scale: [1, 1.1],
+            rotate: 90,
             transition: {
               ...transition,
               delay: 0.15,
@@ -134,7 +135,7 @@ export function Logo({ className }: { className?: string }) {
             scaleX: 0.75,
             transition: {
               ...transition,
-              delay: 0,
+              delay: 0.2,
             },
           },
         }}
@@ -151,7 +152,7 @@ export function Logo({ className }: { className?: string }) {
             scaleX: 0.5,
             transition: {
               ...transition,
-              delay: 0.1,
+              delay: 0.3,
             },
           },
         }}
@@ -168,7 +169,7 @@ export function Logo({ className }: { className?: string }) {
             scaleX: 1,
             transition: {
               ...transition,
-              delay: 0.2,
+              delay: 0.4,
             },
           },
         }}

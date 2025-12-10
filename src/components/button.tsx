@@ -5,9 +5,9 @@ import { Link } from './link'
 const variants = {
   primary: clsx(
     'inline-flex items-center justify-center px-4 py-[calc(--spacing(2)-1px)] font-sans',
-    'rounded-md border border-transparent bg-morganBrown-700 shadow-md',
+    'rounded-md border border-transparent bg-morganBrown-950 shadow-md',
     'text-base font-medium whitespace-nowrap text-white',
-    'data-disabled:bg-morganBrown-950 data-disabled:opacity-40 data-hover:bg-morganBrown-950',
+    'data-disabled:bg-morganBrown-800 data-disabled:opacity-40 data-hover:bg-morganBrown-800',
   ),
 
   primaryDark: clsx(

@@ -145,19 +145,25 @@ function Copyright() {
   )
 }
 
-export function Footer() {
+export function Footer({
+  hideCallToAction = false,
+}: {
+  hideCallToAction?: boolean
+}) {
   return (
     <footer>
       <Gradient className="relative">
         <div className="absolute inset-2 rounded-4xl bg-white/80" />
         <Container>
-          <CallToAction />
+          {!hideCallToAction && <CallToAction />}
           <PlusGrid className="pb-16">
             <PlusGridRow>
               <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">
                 <div className="col-span-2 flex">
                   <PlusGridItem className="pt-6 lg:pb-6">
-                    <Logo className="h-9" />
+                    <Link href="/" aria-label="Home">
+                      <Logo className="h-9" />
+                    </Link>
                   </PlusGridItem>
                 </div>
                 <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-12 lg:col-span-4 lg:grid-cols-subgrid lg:pt-6">
