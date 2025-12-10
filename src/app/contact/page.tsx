@@ -103,7 +103,7 @@ function ContactForm() {
           <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
           <div className="border border-gray-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
             <fieldset>
-              <legend className="text-base/6 text-gray-500">I'm a:</legend>
+              <legend className="text-base/6 text-gray-500">I&apos;m a:</legend>
               <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
                 <RadioInput
                   label="Business Leader"
@@ -121,7 +121,7 @@ function ContactForm() {
           <TextArea label="Message" name="message" />
         </div>
         <Button type="submit" className="mt-10">
-          Let's work together
+          Let&apos;s work together
         </Button>
       </form>
     </div>
