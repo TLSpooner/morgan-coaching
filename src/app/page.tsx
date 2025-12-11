@@ -1,3 +1,4 @@
+import { AnimatedNumber } from '@/components/animated-number'
 import { BentoCard } from '@/components/bento-card'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
@@ -40,9 +41,13 @@ function Hero() {
           <h1 className="font-serif text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
             Grow with hospitality.
           </h1>
-          <p className="mt-8 max-w-xl font-sans text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
+          <p className="mt-8 max-w-3xl font-sans text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
             Hospitality is your most valuable intangible asset. It goes beyond
-            selling products—it builds loyalty.
+            selling products. It builds loyalty with humans, not processes with
+            robots. Your team is competent. Your clients are satisfied. But
+            something&apos;s missing—the energy, the alignment, the sense that
+            people genuinely love being here. How could they, when you
+            don&apos;t love being here yourself.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
             <Button href="/contact">Schedule a 30 min. call</Button>
@@ -188,6 +193,205 @@ function DarkBentoSection() {
   )
 }
 
+function Problem() {
+  return (
+    <Container className="py-32">
+      <Heading as="h2" className="font-serif">
+        The Real Problem Isn&apos;t What You Think
+      </Heading>
+      <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
+        <div className="max-w-lg space-y-6 text-lg/8 text-gray-700">
+          <p>
+            Most leaders assume the problem is tactical: better systems, clearer
+            processes, smarter marketing. But that&apos;s not it.
+          </p>
+          <p>
+            The real problem is that somewhere along the way, we started
+            checking our humanity at the door. Work became transactional.
+            Relationships became functional. And without realizing it, we built
+            organizations where people—employees and clients alike—feel like
+            numbers instead of human beings.
+          </p>
+          <p className="font-medium text-gray-950">The result?</p>
+          <ul className="space-y-4">
+            <li>
+              • Teams that show up but don&apos;t bring their full creativity or
+              energy
+            </li>
+            <li>• Clients who stay but don&apos;t rave about you</li>
+            <li>• Cultures that feel stale—or worse, toxic</li>
+            <li>
+              • Businesses that are successful on paper but hollow in reality
+            </li>
+          </ul>
+          <p>
+            What makes it even harder—you can&apos;t easily quantify culture.
+            You can&apos;t put &quot;organizational vitality&quot; on a
+            dashboard. So it&apos;s deprioritized and undervalued. But it&apos;s
+            the foundation.
+          </p>
+        </div>
+        <div className="pt-20 lg:row-span-2 lg:-mr-16 xl:mr-auto">
+          <div className="-mx-8 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
+            <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
+              <img
+                alt=""
+                src="/problem/1.jpg"
+                className="block size-full object-cover"
+              />
+            </div>
+            <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
+              <img
+                alt=""
+                src="/problem/2.jpg"
+                className="block size-full object-cover"
+              />
+            </div>
+            <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
+              <img
+                alt=""
+                src="/problem/3.jpg"
+                className="block size-full object-cover"
+              />
+            </div>
+            <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
+              <img
+                alt=""
+                src="/problem/4.jpg"
+                className="block size-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="max-lg:mt-16 lg:col-span-1">
+          <Subheading>The Cost</Subheading>
+          <hr className="mt-6 border-t border-gray-200" />
+          <dl className="mt-6 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
+            <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
+              <dt className="text-sm/6 text-gray-600">Employee turnover</dt>
+              <dd className="order-first text-6xl font-medium tracking-tight">
+                <AnimatedNumber start={0} end={52} />%
+              </dd>
+            </div>
+            <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
+              <dt className="text-sm/6 text-gray-600">Disengaged employees</dt>
+              <dd className="order-first text-6xl font-medium tracking-tight">
+                <AnimatedNumber start={0} end={68} />%
+              </dd>
+            </div>
+            <div className="flex flex-col gap-y-2 max-sm:border-b max-sm:border-dotted max-sm:border-gray-200 max-sm:pb-4">
+              <dt className="text-sm/6 text-gray-600">Lost productivity</dt>
+              <dd className="order-first text-6xl font-medium tracking-tight">
+                $<AnimatedNumber start={0} end={450} />B
+              </dd>
+            </div>
+            <div className="flex flex-col gap-y-2">
+              <dt className="text-sm/6 text-gray-600">Leadership burnout</dt>
+              <dd className="order-first text-6xl font-medium tracking-tight">
+                <AnimatedNumber start={0} end={77} />%
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+    </Container>
+  )
+}
+
+function Guide() {
+  return (
+    <Container className="pt-48 pb-32">
+      <Heading as="h2" className="font-serif">
+        I&apos;m Shaun Morgan. And I See What Others Miss.
+      </Heading>
+      <div className="mt-16 max-w-3xl space-y-6 text-lg/8 text-gray-700">
+        <p>
+          I&apos;ve spent my career evaluating businesses and their leaders
+          from multiple vantage points—not just as a coach, but as someone
+          who&apos;s been in the rooms where real decisions get made.
+        </p>
+        <p>
+          I started as a business banker at JP Morgan Chase, analyzing the
+          financials and cash flow of operating businesses across Dallas. I
+          learned early that the numbers tell a story—but the story behind the
+          numbers is always about leadership and organizational health.
+        </p>
+        <p>
+          I spent 15+ years in financial services as a wholesaler, recruiter,
+          and consultant, visiting hundreds of advisor offices nationwide. I
+          developed an almost instinctive sense for when a culture was
+          thriving versus when it was just surviving—and I saw how directly
+          that showed up in client retention, team longevity, and business
+          growth.
+        </p>
+        <p>
+          At Eventide, I worked closely with analysts and portfolio managers
+          who were making multi-million-dollar investment decisions. I learned
+          how they evaluated management teams and what intangible leadership
+          qualities they looked for when deciding where to deploy
+          institutional capital.
+        </p>
+        <p>
+          I&apos;m deeply embedded in the venture capital and angel investing
+          community, where I&apos;ve spoken at events and learned from
+          investors who back early-stage companies. I&apos;ve seen that great
+          ideas fail without great leadership, and average ideas thrive when
+          led by healthy, aligned teams.
+        </p>
+        <p>
+          And I&apos;ve founded three businesses myself—including Annalo
+          Industries and Morgan Advisor Consulting—so I&apos;ve lived the
+          leadership challenges I now coach on. I&apos;ve built teams, managed
+          culture, navigated uncertainty, and learned that organizational
+          vitality isn&apos;t a nice-to-have. It&apos;s the foundation of
+          everything else.
+        </p>
+        <p className="font-medium text-gray-950">
+          Here&apos;s what I know: The businesses that win aren&apos;t the
+          smartest or best-capitalized. They&apos;re the ones with the
+          healthiest leaders, the most aligned teams, and the most hospitable
+          cultures.
+        </p>
+        <p>
+          And in an age where AI is commoditizing technical expertise, the
+          only sustainable competitive advantage is how you make people
+          feel—both your team and your clients.
+        </p>
+      </div>
+      <div className="mt-16">
+        <Subheading>Experience</Subheading>
+        <hr className="mt-6 border-t border-gray-200" />
+        <dl className="mt-6 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
+            <dt className="text-sm/6 text-gray-600">Years in financial services</dt>
+            <dd className="order-first text-6xl font-medium tracking-tight">
+              <AnimatedNumber start={0} end={15} />+
+            </dd>
+          </div>
+          <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
+            <dt className="text-sm/6 text-gray-600">Advisor offices visited</dt>
+            <dd className="order-first text-6xl font-medium tracking-tight">
+              <AnimatedNumber start={0} end={500} />+
+            </dd>
+          </div>
+          <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
+            <dt className="text-sm/6 text-gray-600">Businesses founded</dt>
+            <dd className="order-first text-6xl font-medium tracking-tight">
+              <AnimatedNumber start={0} end={3} />
+            </dd>
+          </div>
+          <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
+            <dt className="text-sm/6 text-gray-600">Coaching clients</dt>
+            <dd className="order-first text-6xl font-medium tracking-tight">
+              <AnimatedNumber start={0} end={50} />+
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </Container>
+  )
+}
+
 export default function Home() {
   return (
     <div className="overflow-hidden">
@@ -196,11 +400,13 @@ export default function Home() {
         <Container className="mt-10">
           <LogoCloud />
         </Container>
-        <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
+        <Problem />
+        <Guide />
+        {/* <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
           <FeatureSection />
           <BentoSection />
         </div>
-        <DarkBentoSection />
+        <DarkBentoSection /> */}
       </main>
       <Testimonials />
       <Footer />

@@ -11,15 +11,15 @@ function CallToAction() {
     <div className="relative pt-20 pb-16 text-center sm:py-24">
       <hgroup>
         <Subheading>Get started</Subheading>
-        <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
-          Ready to dive in?
+        <p className="mt-6 font-serif text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
+          Humans are the difference.
           <br />
-          Start your free trial today.
+          Start your coaching journey today.
         </p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
-        Get the cheat codes for selling and unlock your team&apos;s revenue
-        potential.
+        Unlock your leadership potential and build the confidence to lead with
+        clarity and purpose.
       </p>
       <div className="mt-6">
         <Button className="w-full sm:w-auto" href="/contact">

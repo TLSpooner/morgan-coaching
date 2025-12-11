@@ -157,13 +157,13 @@ function CallToAction() {
   return (
     <div>
       <p className="max-w-sm text-sm/6 text-gray-600">
-        Join the best leaders in business and start your journey with Morgan
-        Coaching today.
+        Join the best leaders in business and start your journey with Shaun
+        Morgan Coaching today.
       </p>
       <div className="mt-2">
         <Link
-          href="#"
-          className="inline-flex items-center gap-2 text-sm/6 font-medium text-pink-600"
+          href="/services"
+          className="inline-flex items-center gap-2 text-sm/6 font-medium text-morganBrown-800"
         >
           Get started
           <ArrowLongRightIcon className="size-5" />

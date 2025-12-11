@@ -14,7 +14,9 @@ export const metadata: Metadata = {
 function Header() {
   return (
     <Container className="mt-16">
-      <Heading as="h1">Helping companies generate revenue.</Heading>
+      <Heading as="h1" className="font-serif">
+        Helping companies generate revenue.
+      </Heading>
       <Lead className="mt-6 max-w-3xl">I know hospitality.</Lead>
       <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
         <div className="max-w-lg">
