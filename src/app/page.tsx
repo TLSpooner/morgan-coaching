@@ -196,7 +196,7 @@ function DarkBentoSection() {
 function Problem() {
   return (
     <Container className="py-32">
-      <Heading as="h2" className="font-serif">
+      <Heading as="h2" className="pt-40 font-serif">
         The Real Problem Isn&apos;t What You Think
       </Heading>
       <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
@@ -231,7 +231,7 @@ function Problem() {
             the foundation.
           </p>
         </div>
-        <div className="pt-20 lg:row-span-2 lg:-mr-16 xl:mr-auto">
+        <div className="pt-40 lg:row-span-2 lg:-mr-16 xl:mr-auto">
           <div className="-mx-8 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
             <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
               <img
@@ -306,9 +306,9 @@ function Guide() {
       </Heading>
       <div className="mt-16 max-w-3xl space-y-6 text-lg/8 text-gray-700">
         <p>
-          I&apos;ve spent my career evaluating businesses and their leaders
-          from multiple vantage points—not just as a coach, but as someone
-          who&apos;s been in the rooms where real decisions get made.
+          I&apos;ve spent my career evaluating businesses and their leaders from
+          multiple vantage points—not just as a coach, but as someone who&apos;s
+          been in the rooms where real decisions get made.
         </p>
         <p>
           I started as a business banker at JP Morgan Chase, analyzing the
@@ -319,24 +319,23 @@ function Guide() {
         <p>
           I spent 15+ years in financial services as a wholesaler, recruiter,
           and consultant, visiting hundreds of advisor offices nationwide. I
-          developed an almost instinctive sense for when a culture was
-          thriving versus when it was just surviving—and I saw how directly
-          that showed up in client retention, team longevity, and business
-          growth.
+          developed an almost instinctive sense for when a culture was thriving
+          versus when it was just surviving—and I saw how directly that showed
+          up in client retention, team longevity, and business growth.
         </p>
         <p>
-          At Eventide, I worked closely with analysts and portfolio managers
-          who were making multi-million-dollar investment decisions. I learned
-          how they evaluated management teams and what intangible leadership
-          qualities they looked for when deciding where to deploy
-          institutional capital.
+          At Eventide, I worked closely with analysts and portfolio managers who
+          were making multi-million-dollar investment decisions. I learned how
+          they evaluated management teams and what intangible leadership
+          qualities they looked for when deciding where to deploy institutional
+          capital.
         </p>
         <p>
           I&apos;m deeply embedded in the venture capital and angel investing
-          community, where I&apos;ve spoken at events and learned from
-          investors who back early-stage companies. I&apos;ve seen that great
-          ideas fail without great leadership, and average ideas thrive when
-          led by healthy, aligned teams.
+          community, where I&apos;ve spoken at events and learned from investors
+          who back early-stage companies. I&apos;ve seen that great ideas fail
+          without great leadership, and average ideas thrive when led by
+          healthy, aligned teams.
         </p>
         <p>
           And I&apos;ve founded three businesses myself—including Annalo
@@ -353,9 +352,9 @@ function Guide() {
           cultures.
         </p>
         <p>
-          And in an age where AI is commoditizing technical expertise, the
-          only sustainable competitive advantage is how you make people
-          feel—both your team and your clients.
+          And in an age where AI is commoditizing technical expertise, the only
+          sustainable competitive advantage is how you make people feel—both
+          your team and your clients.
         </p>
       </div>
       <div className="mt-16">
@@ -363,7 +362,9 @@ function Guide() {
         <hr className="mt-6 border-t border-gray-200" />
         <dl className="mt-6 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2 lg:grid-cols-4">
           <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
-            <dt className="text-sm/6 text-gray-600">Years in financial services</dt>
+            <dt className="text-sm/6 text-gray-600">
+              Years in financial services
+            </dt>
             <dd className="order-first text-6xl font-medium tracking-tight">
               <AnimatedNumber start={0} end={15} />+
             </dd>
