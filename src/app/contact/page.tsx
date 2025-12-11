@@ -1,9 +1,7 @@
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
-import { GradientBackground } from '@/components/gradient'
 import { Link } from '@/components/link'
-import { Navbar } from '@/components/navbar'
 import { Offices } from '@/components/offices'
 import { Heading, Lead, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
@@ -80,7 +78,7 @@ function RadioInput({
   )
 }
 
-function ContactForm() {
+function ContactForm({ defaultInterest }: { defaultInterest?: string }) {
   return (
     <div className="lg:order-last">
       <form>
@@ -101,6 +99,33 @@ function ContactForm() {
             autoComplete="organization"
           />
           <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
+          <div className="border border-gray-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
+            <fieldset>
+              <legend className="text-base/6 text-gray-500">
+                I&apos;m interested in:
+              </legend>
+              <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
+                <RadioInput
+                  label="Coaching"
+                  name="interest"
+                  value="coaching"
+                  defaultChecked={defaultInterest === 'coaching'}
+                />
+                <RadioInput
+                  label="Workshop"
+                  name="interest"
+                  value="workshop"
+                  defaultChecked={defaultInterest === 'workshop'}
+                />
+                <RadioInput
+                  label="Keynote"
+                  name="interest"
+                  value="keynote"
+                  defaultChecked={defaultInterest === 'keynote'}
+                />
+              </div>
+            </fieldset>
+          </div>
           <div className="border border-gray-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
             <fieldset>
               <legend className="text-base/6 text-gray-500">I&apos;m a:</legend>
@@ -240,17 +265,21 @@ function Header() {
   )
 }
 
-export default function Contact() {
+export default async function Contact({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}) {
+  const params = await searchParams
+  const interest =
+    typeof params.interest === 'string' ? params.interest : undefined
+
   return (
     <main className="overflow-hidden">
-      <GradientBackground />
-      <Container>
-        <Navbar />
-      </Container>
       <Header />
       <Container className="mt-24 sm:mt-32 lg:mt-40">
         <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
-          <ContactForm />
+          <ContactForm defaultInterest={interest} />
           <ContactDetails />
         </div>
       </Container>

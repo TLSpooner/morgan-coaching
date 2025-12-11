@@ -10,8 +10,8 @@ import { LogoCloud } from '@/components/logo-cloud'
 import { LogoCluster } from '@/components/logo-cluster'
 import { LogoTimeline } from '@/components/logo-timeline'
 import { Map } from '@/components/map'
-import { Navbar } from '@/components/navbar'
 import { Screenshot } from '@/components/screenshot'
+import { SetBanner } from '@/components/set-banner'
 import { Testimonials } from '@/components/testimonials'
 import { Heading, Subheading } from '@/components/text'
 import { ChevronRightIcon } from '@heroicons/react/16/solid'
@@ -25,19 +25,17 @@ export const metadata: Metadata = {
 function Hero() {
   return (
     <div className="relative">
+      <SetBanner>
+        <Link
+          href="/blog/how-to-grow-your-business-with-hospitality-in-the-age-of-a-i"
+          className="flex items-center gap-1 rounded-full bg-fuchsia-950/35 px-3 py-0.5 text-sm/6 font-medium text-white data-hover:bg-fuchsia-950/30"
+        >
+          Hospitality in the age of A.I.
+          <ChevronRightIcon className="size-4" />
+        </Link>
+      </SetBanner>
       <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset" />
       <Container className="relative">
-        <Navbar
-          banner={
-            <Link
-              href="/blog/how-to-grow-your-business-with-hospitality-in-the-age-of-a-i"
-              className="flex items-center gap-1 rounded-full bg-fuchsia-950/35 px-3 py-0.5 text-sm/6 font-medium text-white data-hover:bg-fuchsia-950/30"
-            >
-              Hospitality in the age of A.I.
-              <ChevronRightIcon className="size-4" />
-            </Link>
-          }
-        />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
           <h1 className="font-serif text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
             Grow with hospitality.
@@ -48,7 +46,7 @@ function Hero() {
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
             <Button href="/contact">Schedule a 30 min. call</Button>
-            <Button variant="secondary" href="/pricing">
+            <Button variant="secondary" href="/services">
               See pricing
             </Button>
           </div>

@@ -12,7 +12,7 @@ import { Logo } from './logo'
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
 
 const links = [
-  { href: '/pricing', label: 'Services' },
+  { href: '/services', label: 'Services' },
   { href: '/company', label: 'Company' },
   { href: '/blog', label: 'Blog' },
   { href: '/', label: 'Financial Advisors' },

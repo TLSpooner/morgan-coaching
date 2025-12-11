@@ -1,10 +1,9 @@
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
-import { Gradient, GradientBackground } from '@/components/gradient'
+import { Gradient } from '@/components/gradient'
 import { Link } from '@/components/link'
 import { LogoCloud } from '@/components/logo-cloud'
-import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import {
@@ -17,92 +16,118 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Services',
   description:
-    'Companies all over the world have closed millions of deals with Radiant. Sign up today and start selling smarter.',
+    'Transform your approach to hospitality through personalized coaching, team workshops, and inspiring keynote addresses.',
 }
 
 const tiers = [
   {
     name: 'Coaching' as const,
     slug: 'coaching',
-    description: 'One-on-one coaching for your client experience.',
+    description:
+      'Personalized one-on-one guidance to transform your leadership approach.',
     priceMonthly: 5,
-    href: '#',
+    href: '/contact?interest=coaching',
     highlights: [
-      { description: 'Up to 3 team members' },
-      { description: 'Up to 5 deal progress boards' },
-      { description: 'Source leads from select platforms' },
-      { description: 'RadiantAI integrations', disabled: true },
-      { description: 'Competitor analysis', disabled: true },
+      { description: 'Individual executive coaching sessions' },
+      { description: 'Customized development roadmap' },
+      { description: 'Monthly progress assessments' },
+      { description: 'Team transformation workshops', disabled: true },
+      { description: 'Speaking engagement opportunities', disabled: true },
     ],
     features: [
-      { section: 'Features', name: 'Accounts', value: 3 },
-      { section: 'Features', name: 'Deal progress boards', value: 5 },
-      { section: 'Features', name: 'Sourcing platforms', value: 'Select' },
-      { section: 'Features', name: 'Contacts', value: 100 },
-      { section: 'Features', name: 'AI assisted outreach', value: false },
-      { section: 'Analysis', name: 'Competitor analysis', value: false },
-      { section: 'Analysis', name: 'Dashboard reporting', value: false },
-      { section: 'Analysis', name: 'Community insights', value: false },
-      { section: 'Analysis', name: 'Performance analysis', value: false },
+      { section: 'Session Details', name: 'Participants', value: '1-on-1' },
+      { section: 'Session Details', name: 'Duration', value: '3-6 months' },
+      {
+        section: 'Session Details',
+        name: 'Session frequency',
+        value: 'Bi-weekly',
+      },
+      { section: 'Session Details', name: 'Session length', value: '90 min' },
+      { section: 'Session Details', name: 'Custom action plans', value: true },
+      { section: 'Outcomes', name: 'Leadership development', value: true },
+      { section: 'Outcomes', name: 'Client experience strategy', value: true },
+      {
+        section: 'Outcomes',
+        name: 'Team culture transformation',
+        value: false,
+      },
+      { section: 'Outcomes', name: 'Organization-wide impact', value: false },
       { section: 'Support', name: 'Email support', value: true },
-      { section: 'Support', name: '24 / 7 call center support', value: false },
-      { section: 'Support', name: 'Dedicated account manager', value: false },
+      { section: 'Support', name: 'Follow-up resources', value: true },
+      { section: 'Support', name: 'Ongoing mentorship', value: false },
     ],
   },
   {
     name: 'Workshop' as const,
     slug: 'growth',
-    description: 'Concentrated learning for teams.',
+    description: 'Interactive team sessions focused on hospitality excellence.',
     priceMonthly: 20,
-    href: '#',
+    href: '/contact?interest=workshop',
     highlights: [
-      { description: 'Up to 10 team members' },
-      { description: 'Unlimited deal progress boards' },
-      { description: 'Source leads from over 50 verified platforms' },
-      { description: 'RadiantAI integrations' },
-      { description: '5 competitor analyses per month' },
+      { description: 'Half-day or full-day workshops' },
+      { description: 'Up to 30 team members' },
+      { description: 'Tailored curriculum for your industry' },
+      { description: 'Interactive exercises and real scenarios' },
+      { description: 'Post-workshop implementation guide' },
     ],
     features: [
-      { section: 'Features', name: 'Accounts', value: 10 },
-      { section: 'Features', name: 'Deal progress boards', value: 'Unlimited' },
-      { section: 'Features', name: 'Sourcing platforms', value: '100+' },
-      { section: 'Features', name: 'Contacts', value: 1000 },
-      { section: 'Features', name: 'AI assisted outreach', value: true },
-      { section: 'Analysis', name: 'Competitor analysis', value: '5 / month' },
-      { section: 'Analysis', name: 'Dashboard reporting', value: true },
-      { section: 'Analysis', name: 'Community insights', value: true },
-      { section: 'Analysis', name: 'Performance analysis', value: true },
+      { section: 'Session Details', name: 'Participants', value: 'Up to 30' },
+      { section: 'Session Details', name: 'Duration', value: '1-2 days' },
+      {
+        section: 'Session Details',
+        name: 'Session frequency',
+        value: 'One-time',
+      },
+      {
+        section: 'Session Details',
+        name: 'Session length',
+        value: '4-8 hours',
+      },
+      { section: 'Session Details', name: 'Custom action plans', value: true },
+      { section: 'Outcomes', name: 'Leadership development', value: true },
+      { section: 'Outcomes', name: 'Client experience strategy', value: true },
+      { section: 'Outcomes', name: 'Team culture transformation', value: true },
+      { section: 'Outcomes', name: 'Organization-wide impact', value: true },
       { section: 'Support', name: 'Email support', value: true },
-      { section: 'Support', name: '24 / 7 call center support', value: true },
-      { section: 'Support', name: 'Dedicated account manager', value: false },
+      { section: 'Support', name: 'Follow-up resources', value: true },
+      { section: 'Support', name: 'Ongoing mentorship', value: false },
     ],
   },
   {
     name: 'Keynote' as const,
     slug: 'keynote',
-    description: 'Quality learning for crowds.',
+    description:
+      'Inspiring presentations that energize and transform audiences.',
     priceMonthly: 30,
-    href: '#',
+    href: '/contact?interest=keynote',
     highlights: [
-      { description: 'Unlimited active team members' },
-      { description: 'Unlimited deal progress boards' },
-      { description: 'Source leads from over 100 verified platforms' },
-      { description: 'RadiantAI integrations' },
-      { description: 'Unlimited competitor analyses' },
+      { description: 'Conference or event presentation' },
+      { description: 'Customized content for your audience' },
+      { description: 'Unlimited audience size' },
+      { description: 'Pre-event consultation call' },
+      { description: 'Optional Q&A session' },
     ],
     features: [
-      { section: 'Features', name: 'Accounts', value: 'Unlimited' },
-      { section: 'Features', name: 'Deal progress boards', value: 'Unlimited' },
-      { section: 'Features', name: 'Sourcing platforms', value: '100+' },
-      { section: 'Features', name: 'Contacts', value: 'Unlimited' },
-      { section: 'Features', name: 'AI assisted outreach', value: true },
-      { section: 'Analysis', name: 'Competitor analysis', value: 'Unlimited' },
-      { section: 'Analysis', name: 'Dashboard reporting', value: true },
-      { section: 'Analysis', name: 'Community insights', value: true },
-      { section: 'Analysis', name: 'Performance analysis', value: true },
+      { section: 'Session Details', name: 'Participants', value: 'Unlimited' },
+      { section: 'Session Details', name: 'Duration', value: '1 day' },
+      {
+        section: 'Session Details',
+        name: 'Session frequency',
+        value: 'One-time',
+      },
+      {
+        section: 'Session Details',
+        name: 'Session length',
+        value: '60-90 min',
+      },
+      { section: 'Session Details', name: 'Custom action plans', value: true },
+      { section: 'Outcomes', name: 'Leadership development', value: true },
+      { section: 'Outcomes', name: 'Client experience strategy', value: true },
+      { section: 'Outcomes', name: 'Team culture transformation', value: true },
+      { section: 'Outcomes', name: 'Organization-wide impact', value: true },
       { section: 'Support', name: 'Email support', value: true },
-      { section: 'Support', name: '24 / 7 call center support', value: true },
-      { section: 'Support', name: 'Dedicated account manager', value: true },
+      { section: 'Support', name: 'Follow-up resources', value: true },
+      { section: 'Support', name: 'Ongoing mentorship', value: true },
     ],
   },
 ]
@@ -110,7 +135,10 @@ const tiers = [
 function Header() {
   return (
     <Container className="mt-16">
-      <Heading as="h1">Pricing designed to support your journey.</Heading>
+      <Subheading className="mt-16">Services</Subheading>
+      <Heading as="h1" className="font-serif">
+        Flexible pricing designed to support your journey.
+      </Heading>
       <Lead className="mt-6 max-w-3xl">
         Business leaders worldwide have grown their companies through genuine
         hospitality. Start creating lasting client relationships today.
@@ -152,7 +180,7 @@ function PricingCard({ tier }: { tier: (typeof tiers)[number] }) {
             </div>
           </div>
           <div className="mt-8">
-            <Button href={tier.href}>Start a free trial</Button>
+            <Button href={tier.href}>Contact me</Button>
           </div>
           <div className="mt-8">
             <h3 className="text-sm/6 font-medium text-gray-950">
@@ -224,7 +252,7 @@ function PricingTable({
                       <MenuItem key={tier.slug}>
                         <Link
                           scroll={false}
-                          href={`/pricing?tier=${tier.slug}`}
+                          href={`/services?tier=${tier.slug}`}
                           data-selected={
                             tier === selectedTier ? true : undefined
                           }
@@ -387,14 +415,14 @@ function Testimonial() {
             <figure className="mx-auto flex max-w-xl flex-col gap-16 max-lg:text-center">
               <blockquote>
                 <p className="relative text-3xl tracking-tight text-white before:absolute before:-translate-x-full before:content-['“'] after:absolute after:content-['”'] lg:text-4xl">
-                  Thanks to Radiant, we&apos;re finding new leads that we never
-                  would have found with legal methods.
+                  Thanks to Shaun, we&apos;re finding new leads that we never
+                  would have found.
                 </p>
               </blockquote>
               <figcaption className="mt-auto">
                 <p className="text-sm/6 font-medium text-white">Tina Yards</p>
                 <p className="text-sm/6 font-medium">
-                  <span className="bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent">
+                  <span className="bg-linear-to-r from-morganYellow-400 from-28% via-morganOrange-500 via-70% to-morganBrown-600 bg-clip-text text-transparent">
                     VP of Sales, Protocol
                   </span>
                 </p>
@@ -414,73 +442,77 @@ function FrequentlyAskedQuestions() {
         <Subheading className="text-center">
           Frequently asked questions
         </Subheading>
-        <Heading as="div" className="mt-2 text-center">
+        <Heading as="div" className="mt-2 text-center font-serif">
           Your questions answered.
         </Heading>
         <div className="mx-auto mt-16 mb-32 max-w-xl space-y-12">
           <dl>
             <dt className="text-sm font-semibold">
-              What measures are in place to ensure the security of our data?
+              How do I know which service is right for me or my team?
             </dt>
             <dd className="mt-4 text-sm/6 text-gray-600">
-              Data security is a top priority for us, which is ironic given that
-              our business depends on others not taking it very seriously. We
-              understand that any breach could put both us and most of our
-              customers out of business—and behind bars. We employ robust
-              security measures, including data encryption, secure data centers,
-              and regular security audits to ensure this never happens.
+              It depends on your goals and current needs. One-on-one coaching is
+              ideal for individual leaders looking to develop their personal
+              approach to hospitality and leadership. Team workshops work best
+              when you want to transform your entire team&apos;s culture and
+              create shared practices. Keynote speaking is perfect for
+              conferences, events, or when you want to inspire a large audience
+              with fresh perspectives on hospitality excellence.
             </dd>
           </dl>
           <dl>
             <dt className="text-sm font-semibold">
-              Is there a mobile app available for your platform?
+              What industries do you work with?
             </dt>
             <dd className="mt-4 text-sm/6 text-gray-600">
-              Yes, we offer a mobile app that provides all the key
-              functionalities of our desktop platform, allowing sales reps to
-              manage deals on the go. Additionally, we have another app
-              pre-installed on most modern smartphones that allows us to track
-              your location, listen to your conversations, and access your
-              camera and microphone at any time. This app is not available for
-              download.
+              While I specialize in the hospitality sector—including hotels,
+              restaurants, resorts, and event venues—the principles of genuine
+              hospitality apply across all service industries. I&apos;ve worked
+              with healthcare organizations, professional services firms, retail
+              businesses, and corporate teams who want to elevate their client
+              experience and build lasting relationships.
             </dd>
           </dl>
           <dl>
             <dt className="text-sm font-semibold">
-              Can I customize the workflow to match our company’s deal process?
+              What can I expect from a coaching engagement?
             </dt>
             <dd className="mt-4 text-sm/6 text-gray-600">
-              Yes, our platform is highly customizable, although there should be
-              no need. Before you sign up, we discreetly gather information
-              about your company and its processes from a variety of sources. We
-              then use this information to pre-configure the platform to match
-              your existing workflows. This is why we ask for your social
-              security number and access to your email account during the
-              sign-up process.
+              Coaching engagements typically run 3-6 months with bi-weekly
+              sessions. We&apos;ll start by identifying your specific challenges
+              and goals, then develop a customized roadmap for growth. Between
+              sessions, you&apos;ll implement what we discuss and receive
+              follow-up support via email. The focus is always on practical,
+              actionable strategies you can apply immediately to transform how
+              you lead and serve your clients.
             </dd>
           </dl>
           <dl>
             <dt className="text-sm font-semibold">
-              What kind of support do you offer?
+              How are workshops customized for our organization?
             </dt>
             <dd className="mt-4 text-sm/6 text-gray-600">
-              We offer comprehensive support through multiple channels,
-              including 24/7 live chat, email, and phone support. However, since
-              we have full access to your internal network, we will know if
-              you’re having issues before you do.
+              Every workshop is tailored to your specific industry, challenges,
+              and team dynamics. Before the workshop, we&apos;ll have a
+              consultation to understand your goals, team composition, and
+              current pain points. I&apos;ll design interactive exercises,
+              real-world scenarios, and discussions that directly address your
+              situation. You&apos;ll also receive a post-workshop implementation
+              guide to help sustain the momentum and changes we create together.
             </dd>
           </dl>
           <dl>
             <dt className="text-sm font-semibold">
-              Can I integrate the CRM with other sales intelligence tools?
+              What topics do you typically cover in keynote presentations?
             </dt>
             <dd className="mt-4 text-sm/6 text-gray-600">
-              Yes, our solution integrates seamlessly with a variety of other
-              systems. However, be warned that most of these integrations are
-              short-lived. We have a dedicated team of engineers who
-              reverse-engineer the APIs of other tools, enabling us to build
-              their functionality into our product and eventually put them out
-              of business.
+              Keynote topics center on transforming client experiences through
+              authentic hospitality, building cultures of excellence, and
+              creating memorable moments that drive loyalty and growth. Each
+              presentation is customized based on your event theme, audience
+              needs, and desired outcomes. We&apos;ll have a pre-event
+              consultation to ensure the content resonates perfectly with your
+              attendees and supports your event objectives.
             </dd>
           </dl>
         </div>
@@ -502,10 +534,6 @@ export default async function Pricing({
 
   return (
     <main className="overflow-hidden">
-      <GradientBackground />
-      <Container>
-        <Navbar />
-      </Container>
       <Header />
       <PricingCards />
       <PricingTable selectedTier={tier} />

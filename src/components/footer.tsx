@@ -22,7 +22,7 @@ function CallToAction() {
         potential.
       </p>
       <div className="mt-6">
-        <Button className="w-full sm:w-auto" href="#">
+        <Button className="w-full sm:w-auto" href="/contact">
           Get started
         </Button>
       </div>
@@ -55,7 +55,7 @@ function Sitemap() {
       <div>
         <SitemapHeading>Services</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="/pricing">Pricing</SitemapLink>
+          <SitemapLink href="/services">Services</SitemapLink>
           <SitemapLink href="#">Business Leaders</SitemapLink>
           <SitemapLink href="#">Financial Advisors</SitemapLink>
         </SitemapLinks>

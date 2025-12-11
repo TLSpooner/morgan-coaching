@@ -152,7 +152,7 @@ export function Logo({ className }: { className?: string }) {
             scaleX: 0.5,
             transition: {
               ...transition,
-              delay: 0.3,
+              delay: 0.2,
             },
           },
         }}
@@ -169,7 +169,7 @@ export function Logo({ className }: { className?: string }) {
             scaleX: 1,
             transition: {
               ...transition,
-              delay: 0.4,
+              delay: 0.2,
             },
           },
         }}

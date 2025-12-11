@@ -9,7 +9,7 @@ export function Gradient({
       {...props}
       className={clsx(
         className,
-        'bg-linear-115 from-white from-28% via-white via-70% to-morganBrown-300 sm:bg-linear-145',
+        'bg-linear-115 from-white from-28% via-white via-70% to-white sm:bg-linear-145',
       )}
     />
   )

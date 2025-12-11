@@ -1,9 +1,7 @@
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
-import { GradientBackground } from '@/components/gradient'
 import { Link } from '@/components/link'
-import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
 import { image } from '@/sanity/image'
 import { getPost } from '@/sanity/queries'
@@ -33,13 +31,11 @@ export default async function BlogPost({
 
   return (
     <main className="overflow-hidden">
-      <GradientBackground />
       <Container>
-        <Navbar />
         <Subheading className="mt-16">
           {dayjs(post.publishedAt).format('dddd, MMMM D, YYYY')}
         </Subheading>
-        <Heading as="h1" className="mt-2">
+        <Heading as="h1" className="mt-2 font-serif">
           {post.title}
         </Heading>
         <div className="mt-16 grid grid-cols-1 gap-8 pb-24 lg:grid-cols-[15rem_1fr] xl:grid-cols-[15rem_1fr_15rem]">
@@ -92,17 +88,17 @@ export default async function BlogPost({
                         </p>
                       ),
                       h2: ({ children }) => (
-                        <h2 className="mt-12 mb-10 text-2xl/8 font-medium tracking-tight text-gray-950 first:mt-0 last:mb-0">
+                        <h2 className="mt-12 mb-10 font-serif text-2xl/8 font-medium tracking-tight text-gray-950 first:mt-0 last:mb-0">
                           {children}
                         </h2>
                       ),
                       h3: ({ children }) => (
-                        <h3 className="mt-12 mb-10 text-xl/8 font-medium tracking-tight text-gray-950 first:mt-0 last:mb-0">
+                        <h3 className="mt-12 mb-10 font-serif text-xl/8 font-medium tracking-tight text-gray-950 first:mt-0 last:mb-0">
                           {children}
                         </h3>
                       ),
                       blockquote: ({ children }) => (
-                        <blockquote className="my-10 border-l-2 border-l-gray-300 pl-6 text-base/8 text-gray-950 first:mt-0 last:mb-0">
+                        <blockquote className="my-10 border-l-2 border-l-gray-300 pl-6 font-serif text-base/8 text-gray-950 first:mt-0 last:mb-0">
                           {children}
                         </blockquote>
                       ),
