@@ -15,9 +15,8 @@ const links = [
   { href: '/services', label: 'Services' },
   { href: '/company', label: 'Company' },
   { href: '/blog', label: 'Blog' },
-  { href: '/', label: 'Financial Advisors' },
-  { href: '/', label: 'Business Leaders' },
-  // { href: '/login', label: 'Login' },
+  { href: '/financial-advisors', label: 'Financial Advisors' },
+  { href: '/business-leaders', label: 'Business Leaders' },
 ]
 
 function DesktopNav() {
@@ -69,7 +68,7 @@ function MobileNav() {
           </motion.div>
         ))}
       </div>
-      <div className="absolute left-1/2 w-screen -translate-x-1/2">
+      <div className="absolute inset-y-0 left-1/2 w-screen -translate-x-1/2">
         <div className="absolute inset-x-0 top-0 border-t border-black/5" />
         <div className="absolute inset-x-0 top-2 border-t border-black/5" />
       </div>

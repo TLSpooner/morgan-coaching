@@ -13,6 +13,7 @@ import { LogoTimeline } from '@/components/logo-timeline'
 import { Map } from '@/components/map'
 import { Screenshot } from '@/components/screenshot'
 import { SetBanner } from '@/components/set-banner'
+import { Testimonials } from '@/components/testimonials'
 import { Heading, Subheading } from '@/components/text'
 import { ChevronRightIcon } from '@heroicons/react/16/solid'
 import type { Metadata } from 'next'
@@ -400,15 +401,15 @@ export default function Home() {
         <Container className="mt-10">
           <LogoCloud />
         </Container>
-        {/* <Problem /> */}
-        {/* <Guide /> */}
+        <Problem />
+        <Guide />
         {/* <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
           <FeatureSection />
           <BentoSection />
         </div>
         <DarkBentoSection /> */}
       </main>
-      {/* <Testimonials /> */}
+      <Testimonials />
       <Footer />
     </div>
   )

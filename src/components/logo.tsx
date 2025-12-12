@@ -128,7 +128,7 @@ export function Logo({ className }: { className?: string }) {
         d="M1402.848,129.363c1.109,0,2.017,1.12,2.017,2.5s-.908,2.5-2.017,2.5h-658.685c-1.114,0-2.017-1.12-2.017-2.5s.904-2.5,2.017-2.5h658.685Z"
         fill="#c85a0c"
         stroke="#c85a0c"
-        stroke-miterlimit="10"
+        strokeMiterlimit="10"
         variants={{
           idle: { scaleX: 0 },
           active: {
@@ -145,7 +145,7 @@ export function Logo({ className }: { className?: string }) {
         d="M1402.848,144.863c1.109,0,2.017,1.12,2.017,2.5s-.908,2.5-2.017,2.5h-658.685c-1.114,0-2.017-1.12-2.017-2.5s.904-2.5,2.017-2.5h658.685Z"
         fill="#ffc800"
         stroke="#ffc800"
-        stroke-miterlimit="10"
+        strokeMiterlimit="10"
         variants={{
           idle: { scaleX: 0 },
           active: {
@@ -162,7 +162,7 @@ export function Logo({ className }: { className?: string }) {
         d="M1402.848,113.863c1.109,0,2.017,1.12,2.017,2.5s-.908,2.5-2.017,2.5h-658.685c-1.114,0-2.017-1.12-2.017-2.5s.904-2.5,2.017-2.5h658.685Z"
         fill="#4b0803"
         stroke="#4b0803"
-        stroke-miterlimit="10"
+        strokeMiterlimit="10"
         variants={{
           idle: { scaleX: 0 },
           active: {
