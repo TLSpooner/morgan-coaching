@@ -29,7 +29,7 @@ export default function RootLayout({
           href="/blog/feed.xml"
         />
       </head>
-      <body className="text-gray-950 antialiased">
+      <body className="overflow-x-clip text-gray-950 antialiased">
         <GradientBackground />
         <BannerProvider>
           <NavbarWrapper />

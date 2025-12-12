@@ -13,7 +13,6 @@ import { LogoTimeline } from '@/components/logo-timeline'
 import { Map } from '@/components/map'
 import { Screenshot } from '@/components/screenshot'
 import { SetBanner } from '@/components/set-banner'
-import { Testimonials } from '@/components/testimonials'
 import { Heading, Subheading } from '@/components/text'
 import { ChevronRightIcon } from '@heroicons/react/16/solid'
 import type { Metadata } from 'next'
@@ -231,8 +230,8 @@ function Problem() {
             the foundation.
           </p>
         </div>
-        <div className="pt-40 lg:row-span-2 lg:-mr-16 xl:mr-auto">
-          <div className="-mx-8 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
+        <div className="pt-40 lg:row-span-2 xl:mr-auto">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 lg:grid-cols-2 lg:gap-4 xl:gap-8">
             <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
               <img
                 alt=""
@@ -401,15 +400,15 @@ export default function Home() {
         <Container className="mt-10">
           <LogoCloud />
         </Container>
-        <Problem />
-        <Guide />
+        {/* <Problem /> */}
+        {/* <Guide /> */}
         {/* <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
           <FeatureSection />
           <BentoSection />
         </div>
         <DarkBentoSection /> */}
       </main>
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Footer />
     </div>
   )
