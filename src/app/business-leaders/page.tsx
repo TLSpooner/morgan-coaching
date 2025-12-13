@@ -77,7 +77,7 @@ function Problem() {
 
           <div>
             <p className="font-semibold text-gray-950">
-              Your culture feels staleor worse.
+              Your culture feels stale or worse.
             </p>
             <p className="mt-2">
               Maybe it&apos;s not toxic. But it&apos;s not thriving either.
@@ -93,7 +93,7 @@ function Problem() {
             <p className="mt-2">
               You deliver good service. But your clients aren&apos;t raving
               fans. They&apos;re not bonding to your brand. They&apos;re
-              satisfiedbut not loyal.
+              satisfied but not loyal.
             </p>
           </div>
 
@@ -125,7 +125,7 @@ function Problem() {
             </p>
             <p className="mt-4 font-medium text-gray-950">
               But here&apos;s the truth: Being an adult IS being a human. And
-              humanseven the most competent, high-performing humansdo better
+              humans even the most competent, high-performing humans do better
               work when they feel known, understood, and appreciated.
             </p>
             <p className="mt-4 text-xl font-semibold text-gray-950">
@@ -144,7 +144,7 @@ function Guide() {
     <div className="bg-gray-50 py-32">
       <Container>
         <Heading as="h2" className="font-serif">
-          I&apos;ve Seen What Makes Businesses ThriveFrom Every Angle
+          I&apos;ve Seen What Makes Businesses Thrive From Every Angle
         </Heading>
         <div className="mt-16 max-w-3xl space-y-6 text-lg/8 text-gray-700">
           <p>
@@ -154,8 +154,8 @@ function Guide() {
           <p>
             I started as a business banker at JP Morgan Chase, analyzing the
             financials and cash flow of operating businesses. I learned early
-            that the numbers always tell a storybut the story behind the numbers
-            is always about leadership and people.
+            that the numbers always tell a story but the story behind the
+            numbers is always about leadership and people.
           </p>
           <p>
             I spent 15+ years in financial services, visiting hundreds of
@@ -167,7 +167,7 @@ function Guide() {
           <p>
             At Eventide, I worked alongside analysts and portfolio managers who
             were making multi-million-dollar investment decisions. I learned
-            what they looked for in management teamsand it wasn&apos;t just
+            what they looked for in management teams and it wasn&apos;t just
             strategy or market position. It was trust, alignment, and emotional
             intelligence.
           </p>
@@ -179,7 +179,7 @@ function Guide() {
             led by healthy teams.
           </p>
           <p>
-            And I&apos;ve founded three businesses myselfso I&apos;ve lived the
+            And I&apos;ve founded three businesses myself so I&apos;ve lived the
             challenges I now coach on. I&apos;ve built teams, managed culture,
             made hard decisions, and learned that organizational vitality
             isn&apos;t a luxury. It&apos;s the foundation of sustainable growth.
@@ -214,8 +214,8 @@ function Philosophy() {
               It starts with the leader.
             </p>
             <p className="mt-2">
-              If you&apos;re not healthyself-aware, emotionally intelligent,
-              confident yet humbleyour team can&apos;t be healthy either.
+              If you&apos;re not healthy self-aware, emotionally intelligent,
+              confident yet humble your team can&apos;t be healthy either.
               Leadership dysfunction cascades through the organization.
             </p>
           </div>
@@ -251,8 +251,8 @@ function Philosophy() {
           </p>
           <p className="mt-4">
             Hospitality isn&apos;t service. Service is executing the
-            transaction. Hospitality is making people feel valuable and
-            enjoyedboth internally and externally.
+            transaction. Hospitality is making people feel valuable and enjoyed
+            both internally and externally.
           </p>
         </div>
 
@@ -298,8 +298,8 @@ function Approach() {
               <p>
                 It starts with you. We&apos;ll work on your self-awareness,
                 emotional intelligence, and relational capacity. We&apos;ll
-                develop the personal disciplinesorganization, focus,
-                goal-settingthat make great leadership sustainable.
+                develop the personal disciplines organization, focus,
+                goal-setting that make great leadership sustainable.
               </p>
               <p>
                 But more importantly, we&apos;ll work on your relational
@@ -317,7 +317,7 @@ function Approach() {
             <div className="mt-6 max-w-3xl space-y-4 text-lg/8 text-gray-700">
               <p>
                 When you&apos;re healthy, your team can become healthy.
-                We&apos;ll establish the foundation of genuine trustnot just
+                We&apos;ll establish the foundation of genuine trust not just
                 confidence that people will do what they say, but the deeper
                 security that allows people to be fully honest with each other.
               </p>
@@ -334,12 +334,12 @@ function Approach() {
               </p>
               <p>
                 And we&apos;ll help your broader organization operate with these
-                same dynamicscreating a culture where people feel known,
+                same dynamics creating a culture where people feel known,
                 understood, and appreciated.
               </p>
               <p className="font-medium text-gray-950">
                 When people feel secure enough to be real with each other, teams
-                become exponentially more productiveand that culture naturally
+                become exponentially more productive and that culture naturally
                 extends to how they serve your clients.
               </p>
             </div>
@@ -360,8 +360,8 @@ function Approach() {
                 strategy.
               </p>
               <p className="font-medium text-gray-950">
-                When hospitality permeates your organizationwhen it becomes
-                &quot;cool to care&quot;your business becomes nearly impossible
+                When hospitality permeates your organization when it becomes
+                &quot;cool to care&quot; your business becomes nearly impossible
                 to compete with.
               </p>
             </div>
@@ -389,7 +389,7 @@ function Offerings() {
               <p className="font-medium text-gray-950">What it is:</p>
               <p>
                 Private coaching for leaders who want to build healthy
-                organizations where people thriveand where that vitality
+                organizations where people thrive and where that vitality
                 translates into loyal customers and sustainable growth.
               </p>
               <p className="font-medium text-gray-950">Who it&apos;s for:</p>
@@ -403,12 +403,12 @@ function Offerings() {
                 What we&apos;ll work on:
               </p>
               <ul className="space-y-2">
-                <li>" Your personal health and leadership capacity</li>
+                <li>&ldquo; Your personal health and leadership capacity</li>
                 <li>
-                  " Building trust and alignment within your leadership team
+                  &ldquo; Building trust and alignment within your leadership team
                 </li>
-                <li>" Creating a culture where people feel known and valued</li>
-                <li>" Designing hospitality into every customer touchpoint</li>
+                <li>&ldquo; Creating a culture where people feel known and valued</li>
+                <li>&ldquo; Designing hospitality into every customer touchpoint</li>
               </ul>
             </div>
             <div className="mt-8">
@@ -426,7 +426,7 @@ function Offerings() {
               <p className="font-medium text-gray-950">What it is:</p>
               <p>
                 A half-day or full-day workshop for your leadership team or
-                entire organizationdesigned to build trust, alignment, and a
+                entire organization designed to build trust, alignment, and a
                 hospitality-driven culture.
               </p>
               <p className="font-medium text-gray-950">Who it&apos;s for:</p>
@@ -440,20 +440,20 @@ function Offerings() {
               </p>
               <ul className="space-y-2">
                 <li>
-                  " The three phases of organizational vitality (leader, team,
+                  &ldquo; The three phases of organizational vitality (leader, team,
                   client experience)
                 </li>
-                <li>" Building vulnerability-based trust within your team</li>
+                <li>&ldquo; Building vulnerability-based trust within your team</li>
                 <li>
-                  " Establishing healthy conflict, commitment, accountability,
+                  &ldquo; Establishing healthy conflict, commitment, accountability,
                   and results
                 </li>
                 <li>
-                  " Mapping customer touchpoints and elevating the experience at
+                  &ldquo; Mapping customer touchpoints and elevating the experience at
                   each one
                 </li>
                 <li>
-                  " Creating a culture where hospitality becomes your
+                  &ldquo; Creating a culture where hospitality becomes your
                   competitive advantage
                 </li>
               </ul>
@@ -479,22 +479,22 @@ function Offerings() {
               <p className="font-medium text-gray-950">The talk covers:</p>
               <ul className="space-y-2">
                 <li>
-                  " Why most businesses have accidentally dehumanized work
+                  &ldquo; Why most businesses have accidentally dehumanized work
                 </li>
                 <li>
-                  " The connection between internal culture and external client
+                  &ldquo; The connection between internal culture and external client
                   experience
                 </li>
                 <li>
-                  " Why healthy leaders create healthy teams, and healthy teams
+                  &ldquo; Why healthy leaders create healthy teams, and healthy teams
                   create loyal customers
                 </li>
                 <li>
-                  " How hospitalitymaking people feel valuable and enjoyedis the
-                  only competitive advantage AI can&apos;t replicate
+                  &ldquo; How hospitality making people feel valuable and enjoyed is
+                  the only competitive advantage AI can&apos;t replicate
                 </li>
                 <li>
-                  " Practical steps to begin building a hospitality-driven
+                  &ldquo; Practical steps to begin building a hospitality-driven
                   organization
                 </li>
               </ul>
@@ -591,34 +591,34 @@ function Success() {
       <p className="mt-6 text-lg/8 text-gray-700">Imagine this:</p>
       <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
         <div className="flex gap-4">
-          <div className="flex-shrink-0 text-2xl"></div>
+          <div className="flex-shrink-0 text-2xl"> </div>
           <p className="text-lg/8 text-gray-700">
             Your team shows up energized, aligned, and genuinely excited about
             the work
           </p>
         </div>
         <div className="flex gap-4">
-          <div className="flex-shrink-0 text-2xl"></div>
+          <div className="flex-shrink-0 text-2xl"> </div>
           <p className="text-lg/8 text-gray-700">
-            People bring their full creativity and ingenuityyou don&apos;t have
+            People bring their full creativity and ingenuity you don&apos;t have
             to micromanage
           </p>
         </div>
         <div className="flex gap-4">
-          <div className="flex-shrink-0 text-2xl"></div>
+          <div className="flex-shrink-0 text-2xl"> </div>
           <p className="text-lg/8 text-gray-700">
             Your culture is a competitive advantage that attracts top talent
           </p>
         </div>
         <div className="flex gap-4">
-          <div className="flex-shrink-0 text-2xl"></div>
+          <div className="flex-shrink-0 text-2xl"> </div>
           <p className="text-lg/8 text-gray-700">
-            Your clients don&apos;t just buythey bond to your brand and refer
+            Your clients don&apos;t just buy they bond to your brand and refer
             you constantly
           </p>
         </div>
         <div className="flex gap-4">
-          <div className="flex-shrink-0 text-2xl"></div>
+          <div className="flex-shrink-0 text-2xl"> </div>
           <p className="text-lg/8 text-gray-700">
             You&apos;ve built an organization where people feel known, valued,
             and inspired

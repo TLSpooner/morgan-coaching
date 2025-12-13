@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typegen": "sanity schema extract --path=src/sanity/extract.json && sanity typegen generate && rm ./src/sanity/extract.json"
+    "typegen": "sanity schema extract --path=src/sanity/extract.json && sanity typegen generate && rm ./src/sanity/extract.json",
+    "keap:fields": "node scripts/get-keap-fields.js",
+    "keap:token": "node scripts/get-keap-token.js"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.6",

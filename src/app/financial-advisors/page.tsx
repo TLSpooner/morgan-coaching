@@ -142,22 +142,22 @@ function Guide() {
           </p>
           <ul className="space-y-4">
             <li>
-              " As a business banker at JP Morgan Chase, I analyzed the
+              &ldquo; As a business banker at JP Morgan Chase, I analyzed the
               financials of operating businesses and learned how leadership
               health shows up in the numbers.
             </li>
             <li>
-              " At Eventide, I worked alongside analysts and portfolio managers
+              &ldquo; At Eventide, I worked alongside analysts and portfolio managers
               who evaluated management teams for multi-million-dollar investment
               decisions. I learned what makes a team investable.
             </li>
             <li>
-              " In the venture capital and angel investing community, I&apos;ve
+              &ldquo; In the venture capital and angel investing community, I&apos;ve
               spoken at events and learned from investors who back early-stage
               companies based on team quality.
             </li>
             <li>
-              " As a three-time founder, I&apos;ve built teams, managed culture,
+              &ldquo; As a three-time founder, I&apos;ve built teams, managed culture,
               and lived the challenges I now coach on.
             </li>
           </ul>
@@ -346,10 +346,10 @@ function Offerings() {
               </p>
               <p className="font-medium text-gray-950">What we&apos;ll work on:</p>
               <ul className="space-y-2">
-                <li>" Your identity and motivation as a leader</li>
-                <li>" Building a healthy, aligned team</li>
-                <li>" Designing unforgettable client experiences</li>
-                <li>" Making hospitality your competitive advantage</li>
+                <li>&ldquo; Your identity and motivation as a leader</li>
+                <li>&ldquo; Building a healthy, aligned team</li>
+                <li>&ldquo; Designing unforgettable client experiences</li>
+                <li>&ldquo; Making hospitality your competitive advantage</li>
               </ul>
             </div>
             <div className="mt-8">
@@ -379,18 +379,18 @@ function Offerings() {
               <p className="font-medium text-gray-950">What we&apos;ll cover:</p>
               <ul className="space-y-2">
                 <li>
-                  " The three phases of organizational vitality (leader, team,
+                  &ldquo; The three phases of organizational vitality (leader, team,
                   client experience)
                 </li>
                 <li>
-                  " Mapping every client touchpoint and elevating each one
+                  &ldquo; Mapping every client touchpoint and elevating each one
                 </li>
                 <li>
-                  " Building trust, alignment, and accountability within your
+                  &ldquo; Building trust, alignment, and accountability within your
                   team
                 </li>
                 <li>
-                  " Creating a hospitality system that becomes your competitive
+                  &ldquo; Creating a hospitality system that becomes your competitive
                   moat
                 </li>
               </ul>
@@ -414,21 +414,21 @@ function Offerings() {
               </p>
               <p className="font-medium text-gray-950">The talk covers:</p>
               <ul className="space-y-2">
-                <li>" The history of commoditization in financial advice</li>
+                <li>&ldquo; The history of commoditization in financial advice</li>
                 <li>
-                  " Why AI will automate most of your technical value in the
+                  &ldquo; Why AI will automate most of your technical value in the
                   next 5 years
                 </li>
                 <li>
-                  " Why client experience is now your only sustainable
+                  &ldquo; Why client experience is now your only sustainable
                   competitive advantage
                 </li>
                 <li>
-                  " The case for becoming a hospitality firm that happens to
+                  &ldquo; The case for becoming a hospitality firm that happens to
                   offer wealth management
                 </li>
                 <li>
-                  " Practical steps to begin building a hospitality-driven
+                  &ldquo; Practical steps to begin building a hospitality-driven
                   practice
                 </li>
               </ul>
@@ -460,11 +460,11 @@ function Offerings() {
             <p className="font-medium text-gray-950">What happens:</p>
             <ul className="space-y-2">
               <li>
-                " <strong>Day 1:</strong> We&apos;ll work on you as a leader,
+                &ldquo; <strong>Day 1:</strong> We&apos;ll work on you as a leader,
                 your team dynamics, and organizational vitality
               </li>
               <li>
-                " <strong>Day 2:</strong> We&apos;ll map your client experience,
+                &ldquo; <strong>Day 2:</strong> We&apos;ll map your client experience,
                 design hospitality into every touchpoint, and create actionable
                 systems you can implement immediately
               </li>
