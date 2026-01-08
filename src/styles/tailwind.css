@@ -119,3 +119,9 @@
     transform: translateX(var(--move-x-to));
   }
 }
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(200%);
+  }
+}

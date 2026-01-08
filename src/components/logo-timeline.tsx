@@ -95,8 +95,8 @@ export function LogoTimeline() {
             className="[animation-delay:-45s] [animation-duration:45s]"
           />
           <Logo
-            label="Discord"
-            src="/logo-timeline/discord.svg"
+            label="Unreasonable Hospitality"
+            src="/logo-timeline/unreasonable-hospitality.svg"
             className="[animation-delay:-23s] [animation-duration:45s]"
           />
         </Row>

@@ -1,9 +1,11 @@
 import { AnimatedNumber } from '@/components/animated-number'
+import { AnimatedUnderlineLink } from '@/components/animated-underline-link'
 import { BentoCard } from '@/components/bento-card'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
 import { Gradient } from '@/components/gradient'
+import { HeroVideo } from '@/components/hero-video'
 import { Keyboard } from '@/components/keyboard'
 import { Link } from '@/components/link'
 import { LinkedAvatars } from '@/components/linked-avatars'
@@ -15,6 +17,7 @@ import { Screenshot } from '@/components/screenshot'
 import { SetBanner } from '@/components/set-banner'
 import { Testimonials } from '@/components/testimonials'
 import { Heading, Subheading } from '@/components/text'
+import { TypewriterScript } from '@/components/typewriter-script'
 import { ChevronRightIcon } from '@heroicons/react/16/solid'
 import type { Metadata } from 'next'
 
@@ -39,21 +42,175 @@ function Hero() {
       <Container className="relative">
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
           <h1 className="font-serif text-6xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
-            Grow with hospitality.
+            Grow by being human.
           </h1>
-          <p className="mt-8 max-w-3xl font-sans text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            Hospitality is your most valuable intangible asset. It goes beyond
-            selling products. It builds loyalty with humans, not processes with
-            robots. Your team is competent. Your clients are satisfied. But
-            something&apos;s missing—the energy, the alignment, the sense that
-            people genuinely love being here. How could they, when you
-            don&apos;t love being here yourself.
+          <p className="sm:text-l/2 mt-8 max-w-2xl font-sans text-xl/7 font-normal text-gray-950/75 sm:leading-tight">
+            Being human is more difficult than ever, which just might mean it's
+            rarer and more valuable than ever. What's certain, A.I. is
+            fundamentally changing what being human means. So let's start our
+            partnership with the following principle: being human is being
+            hospitable.
           </p>
+
+          {/* <div className="mt-6 max-w-2xl space-y-4">
+            <div className="min-h-[2rem] sm:min-h-[2.5rem]">
+              <Typewriter
+                text="What does it mean to be hospitable?"
+                delay={8}
+                cursorDuration={2}
+                speed={0.1}
+                className="sm:text-l/2 mt-8 max-w-2xl font-serif text-xl/7 font-normal text-gray-950/75 sm:leading-tight"
+              />
+            </div>
+          </div> */}
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
             <Button href="/contact">Schedule a 30 min. call</Button>
             <Button variant="secondary" href="/services">
               See pricing
             </Button>
+          </div>
+        </div>
+      </Container>
+    </div>
+  )
+}
+
+function HeroWithVideo() {
+  return (
+    <div className="relative">
+      <SetBanner>
+        <Link
+          href="/blog/how-to-grow-your-business-with-hospitality-in-the-age-of-a-i"
+          className="flex items-center gap-1 rounded-full bg-fuchsia-950/35 px-3 py-0.5 text-sm/6 font-medium text-white data-hover:bg-fuchsia-950/30"
+        >
+          Hospitality in the age of A.I.
+          <ChevronRightIcon className="size-4" />
+        </Link>
+      </SetBanner>
+      <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset" />
+      <Container className="relative">
+        <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
+          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+            {/* Left: Content */}
+            <div>
+              <h1 className="font-serif text-4xl/[0.9] font-medium tracking-tight text-balance text-gray-950 sm:text-5xl/[0.8] lg:text-6xl/[0.8]">
+                Grow by being human.
+              </h1>
+              <p className="mt-8 max-w-xl font-sans text-xl/7 font-normal text-gray-950/75">
+                Your team is competent. Your clients are satisfied. But
+                something's missing—the energy, the alignment, the sense that
+                people (including you) genuinely love being here.
+              </p>
+              <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
+                <Button href="/contact">Schedule a 30 min. call</Button>
+                <Button variant="secondary" href="/services">
+                  See pricing
+                </Button>
+              </div>
+            </div>
+
+            {/* Right: Video */}
+            <div>
+              <HeroVideo vimeoId="1152426778" />
+              <Link
+                href="/explore"
+                className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-gray-600"
+              >
+                <span className="relative text-base/7">
+                  Start your coaching journey today
+                  <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-morganBrown-950 transition-all duration-500 ease-out group-hover:w-full" />
+                </span>
+                <ChevronRightIcon className="size-4" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </Container>
+    </div>
+  )
+}
+
+function Definition() {
+  return (
+    <div className="py-24 sm:py-32">
+      <Container>
+        <div className="mt-6 max-w-2xl lg:mt-40">
+          <Heading as="h2" className="font-serif">
+            It Starts With a Definition
+          </Heading>
+          <p className="mt-6 text-lg/8 text-gray-700">
+            The word "hospitable" carries more weight than most people realize.
+            It's not just about being nice or friendly—it's about creating an
+            environment where people feel genuinely welcomed, valued, and cared
+            for. Let's explore what it really means.
+          </p>
+
+          <div className="mt-12 space-y-4">
+            <div className="font-serif text-xl/7 font-semibold text-gray-950/75 sm:text-xl/2 sm:leading-tight">
+              <AnimatedUnderlineLink
+                text="hos·pi·ta·ble"
+                showCursor={false}
+                className="font-serif text-xl/7 font-semibold text-gray-950/75 sm:text-xl/2 sm:leading-tight"
+              />
+              <span className="font-serif text-xl/7 font-semibold text-gray-950/75 sm:text-xl/2 sm:leading-tight">
+                {' '}
+                /häˈspidəb(ə)l,ˈhäspidəb(ə)l/
+              </span>
+            </div>
+
+            <div>
+              <p className="font-serif text-xl/7 font-normal text-gray-950/50 italic sm:leading-tight">
+                adjective
+              </p>
+            </div>
+
+            <div className="mt-6 whitespace-pre-line">
+              <TypewriterScript
+                as="div"
+                className="font-serif text-xl/7 font-medium text-gray-950/75 sm:leading-tight"
+                style={{ minHeight: '3.5rem' }}
+                script={[
+                  {
+                    text: 'hospitable: friendly and welcoming to friends and family.\n"sometimes it\'s harder to be hospitable with family."',
+                    endDelay: 1.5,
+                    backspace: 'word',
+                    backspaceFactor: 0.6,
+                  },
+                  {
+                    text: 'hospitable: friendly and welcoming to strangers or guests.\n"two friendly, hospitable brothers run the hotel"',
+                    endDelay: 3,
+                    backspace: 'word',
+                    backspaceFactor: 0.6,
+                  },
+                  {
+                    text: 'hospitable: offering a pleasant and comfortable environment.\n"the hospital has a reputation for being hospitable to visitors"',
+                    endDelay: 4,
+                    backspace: 'character',
+                    backspaceFactor: 1.2,
+                  },
+                  {
+                    text: 'hospitable: receptive and open to new ideas or experiences.\n"she was hospitable to the idea of collaboration"',
+                    endDelay: 3,
+                    backspace: 'character',
+                    backspaceFactor: 1.2,
+                  },
+                  {
+                    text: 'hospitable: creating conditions favorable for growth or development.\n"a hospitable climate for innovation and creativity"',
+                    endDelay: 2,
+                    backspace: 'character',
+                    backspaceFactor: 1.2,
+                  },
+                  {
+                    text: 'hospitable: generous in providing care and sustenance.\n"they maintained a hospitable home for all who entered"',
+                    endDelay: 1.5,
+                    backspace: 'character',
+                    backspaceFactor: 1.2,
+                  },
+                ]}
+                speed={0.05}
+                loop={true}
+              />
+            </div>
           </div>
         </div>
       </Container>
@@ -396,18 +553,22 @@ function Guide() {
 export default function Home() {
   return (
     <div className="overflow-hidden">
-      <Hero />
+      <HeroWithVideo />
       <main>
         <Container className="mt-10">
           <LogoCloud />
         </Container>
+        <Container className="mt-10">
+          {' '}
+          <Definition />{' '}
+        </Container>
         <Problem />
         <Guide />
-        {/* <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
+        <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
           <FeatureSection />
           <BentoSection />
         </div>
-        <DarkBentoSection /> */}
+        <DarkBentoSection />
       </main>
       <Testimonials />
       <Footer />

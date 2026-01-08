@@ -33,13 +33,11 @@ function TextInput({
             : 'text-gray-500 peer-not-placeholder-shown:text-gray-950 peer-focus:text-gray-950'
         }`}
       >
-        {label}
+        {error || label}
       </label>
-      {error && (
-        <p id={`${id}-error`} className="mt-2 px-6 text-sm text-red-600">
-          {error}
-        </p>
-      )}
+      <span id={`${id}-error`} className="sr-only" aria-live="polite">
+        {error}
+      </span>
     </div>
   )
 }

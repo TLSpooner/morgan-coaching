@@ -28,6 +28,10 @@ export default function RootLayout({
           title="The Radiant Blog"
           href="/blog/feed.xml"
         />
+        {/* Preconnect to Vimeo for faster video loading */}
+        <link rel="preconnect" href="https://player.vimeo.com" />
+        <link rel="preconnect" href="https://i.vimeocdn.com" />
+        <link rel="preconnect" href="https://f.vimeocdn.com" />
       </head>
       <body className="text-gray-950 antialiased">
         <GradientBackground />

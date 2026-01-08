@@ -405,10 +405,15 @@ function Offerings() {
               <ul className="space-y-2">
                 <li>&ldquo; Your personal health and leadership capacity</li>
                 <li>
-                  &ldquo; Building trust and alignment within your leadership team
+                  &ldquo; Building trust and alignment within your leadership
+                  team
                 </li>
-                <li>&ldquo; Creating a culture where people feel known and valued</li>
-                <li>&ldquo; Designing hospitality into every customer touchpoint</li>
+                <li>
+                  &ldquo; Creating a culture where people feel known and valued
+                </li>
+                <li>
+                  &ldquo; Designing hospitality into every customer touchpoint
+                </li>
               </ul>
             </div>
             <div className="mt-8">
@@ -440,17 +445,19 @@ function Offerings() {
               </p>
               <ul className="space-y-2">
                 <li>
-                  &ldquo; The three phases of organizational vitality (leader, team,
-                  client experience)
-                </li>
-                <li>&ldquo; Building vulnerability-based trust within your team</li>
-                <li>
-                  &ldquo; Establishing healthy conflict, commitment, accountability,
-                  and results
+                  &ldquo; The three phases of organizational vitality (leader,
+                  team, client experience)
                 </li>
                 <li>
-                  &ldquo; Mapping customer touchpoints and elevating the experience at
-                  each one
+                  &ldquo; Building vulnerability-based trust within your team
+                </li>
+                <li>
+                  &ldquo; Establishing healthy conflict, commitment,
+                  accountability, and results
+                </li>
+                <li>
+                  &ldquo; Mapping customer touchpoints and elevating the
+                  experience at each one
                 </li>
                 <li>
                   &ldquo; Creating a culture where hospitality becomes your
@@ -482,16 +489,17 @@ function Offerings() {
                   &ldquo; Why most businesses have accidentally dehumanized work
                 </li>
                 <li>
-                  &ldquo; The connection between internal culture and external client
-                  experience
+                  &ldquo; The connection between internal culture and external
+                  client experience
                 </li>
                 <li>
-                  &ldquo; Why healthy leaders create healthy teams, and healthy teams
-                  create loyal customers
+                  &ldquo; Why healthy leaders create healthy teams, and healthy
+                  teams create loyal customers
                 </li>
                 <li>
-                  &ldquo; How hospitality making people feel valuable and enjoyed is
-                  the only competitive advantage AI can&apos;t replicate
+                  &ldquo; How hospitality making people feel valuable and
+                  enjoyed is the only competitive advantage AI can&apos;t
+                  replicate
                 </li>
                 <li>
                   &ldquo; Practical steps to begin building a hospitality-driven
