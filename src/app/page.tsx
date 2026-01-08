@@ -45,24 +45,12 @@ function Hero() {
             Grow by being human.
           </h1>
           <p className="sm:text-l/2 mt-8 max-w-2xl font-sans text-xl/7 font-normal text-gray-950/75 sm:leading-tight">
-            Being human is more difficult than ever, which just might mean it's
-            rarer and more valuable than ever. What's certain, A.I. is
-            fundamentally changing what being human means. So let's start our
-            partnership with the following principle: being human is being
-            hospitable.
+            Being human is more difficult than ever, which just might mean
+            it&apos;s rarer and more valuable than ever. What&apos;s certain,
+            A.I. is fundamentally changing what being human means. So let&apos;s
+            start our partnership with the following principle: being human is
+            being hospitable.
           </p>
-
-          {/* <div className="mt-6 max-w-2xl space-y-4">
-            <div className="min-h-[2rem] sm:min-h-[2.5rem]">
-              <Typewriter
-                text="What does it mean to be hospitable?"
-                delay={8}
-                cursorDuration={2}
-                speed={0.1}
-                className="sm:text-l/2 mt-8 max-w-2xl font-serif text-xl/7 font-normal text-gray-950/75 sm:leading-tight"
-              />
-            </div>
-          </div> */}
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
             <Button href="/contact">Schedule a 30 min. call</Button>
             <Button variant="secondary" href="/services">
@@ -98,8 +86,8 @@ function HeroWithVideo() {
               </h1>
               <p className="mt-8 max-w-xl font-sans text-xl/7 font-normal text-gray-950/75">
                 Your team is competent. Your clients are satisfied. But
-                something's missing—the energy, the alignment, the sense that
-                people (including you) genuinely love being here.
+                something&apos;s missing—the energy, the alignment, the sense
+                that people (including you) genuinely love being here.
               </p>
               <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
                 <Button href="/contact">Schedule a 30 min. call</Button>
@@ -139,10 +127,10 @@ function Definition() {
             It Starts With a Definition
           </Heading>
           <p className="mt-6 text-lg/8 text-gray-700">
-            The word "hospitable" carries more weight than most people realize.
-            It's not just about being nice or friendly—it's about creating an
-            environment where people feel genuinely welcomed, valued, and cared
-            for. Let's explore what it really means.
+            The word &quot;hospitable&quot; carries more weight than most people
+            realize. It&apos;s not just about being nice or friendly—it&apos;s
+            about creating an environment where people feel genuinely welcomed,
+            valued, and cared for. Let&apos;s explore what it really means.
           </p>
 
           <div className="mt-12 space-y-4">
