@@ -3,7 +3,7 @@
 import { delay as motionDelay, wrap } from 'motion'
 import { Typewriter } from 'motion-plus-react'
 import { useState, useEffect } from 'react'
-import type { ElementType } from 'react'
+import type { ElementType, ReactNode } from 'react'
 
 interface DefinitionSegment {
   definition: string
@@ -19,6 +19,22 @@ interface DefinitionTypewriterProps {
   className?: string
   style?: React.CSSProperties
   as?: ElementType
+  image?: ReactNode
+}
+
+function PlaceholderImage() {
+  return (
+    <svg
+      width="560"
+      height="560"
+      viewBox="0 0 560 560"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-auto w-full max-w-[560px]"
+    >
+      <rect width="560" height="560" rx="24" fill="#78350f" />
+    </svg>
+  )
 }
 
 export function DefinitionTypewriter({
@@ -29,6 +45,7 @@ export function DefinitionTypewriter({
   className = '',
   style,
   as = 'div',
+  image,
 }: DefinitionTypewriterProps) {
   const [segmentIndex, setSegmentIndex] = useState(0)
   const [hasStarted, setHasStarted] = useState(delay === 0)
@@ -80,31 +97,39 @@ export function DefinitionTypewriter({
   }
 
   return (
-    <div
-      className={className}
-      style={style}
-      role="status"
-      aria-live={prefersReducedMotion ? 'off' : 'polite'}
-      aria-atomic="true"
-    >
-      {prefersReducedMotion ? (
-        <>
-          <span>{definitionPart}</span>
-          <span className="italic text-gray-600">{examplePart}</span>
-        </>
-      ) : (
-        <Typewriter
-          as={as}
-          speed={typingSpeed}
-          variance="natural"
-          backspace="word"
-          backspaceFactor={backspaceFactor}
-          onComplete={handleComplete}
-          replace="type"
-        >
-          {displayText}
-        </Typewriter>
-      )}
+    <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-[minmax(0,672px)_minmax(0,560px)]">
+      {/* Left column: Definition content */}
+      <div
+        className={className}
+        style={style}
+        role="status"
+        aria-live={prefersReducedMotion ? 'off' : 'polite'}
+        aria-atomic="true"
+      >
+        {prefersReducedMotion ? (
+          <>
+            <span>{definitionPart}</span>
+            <span className="italic text-gray-600">{examplePart}</span>
+          </>
+        ) : (
+          <Typewriter
+            as={as}
+            speed={typingSpeed}
+            variance="natural"
+            backspace="word"
+            backspaceFactor={backspaceFactor}
+            onComplete={handleComplete}
+            replace="type"
+          >
+            {displayText}
+          </Typewriter>
+        )}
+      </div>
+
+      {/* Right column: Image */}
+      <div className="flex justify-center lg:justify-end">
+        {image || <PlaceholderImage />}
+      </div>
     </div>
   )
 }
